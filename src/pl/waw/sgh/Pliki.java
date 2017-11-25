@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class Pliki {
 
-    static final String PLIK = "h:" + File.separator + "plik.txt";
+    //static final String PLIK = "h:" + File.separator + "plik.txt";
+    static final String PLIK = "src/pko.csv";
 
     public static void main(String[] args) {
             //throws FileNotFoundException {
@@ -22,16 +23,15 @@ public class Pliki {
             while (scanner.hasNext()) {
                 String linia = scanner.nextLine();
                 System.out.println(linia);
+                String[] elementy = linia.split(",");
+                for (String el : elementy) {
+                    System.out.println("\t" + el);
+                }
             }
         } catch (FileNotFoundException e) {
             System.out.println("Problem z wczytaniem pliku...");
         }
 
-        if (file.isDirectory()) {
-            //file.l
-
-
-        }
 
 
     }
