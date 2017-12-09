@@ -13,7 +13,17 @@ public class PlikiWy {
         if (file.isDirectory()) {
             File[] pliki = file.listFiles();
             for (File plik : pliki) {
-                System.out.println(plik + " " + plik.isDirectory());
+
+                String eol = "\r\n";
+                eol = "\n";
+
+                // Pojedynczy plik
+                File fileOut = new File(
+                        plik.getAbsolutePath()
+                        .replace(".csv", "-out.csv"));
+
+
+                System.out.println(plik.getAbsolutePath() + " " + plik.isDirectory());
             }
         }
 
