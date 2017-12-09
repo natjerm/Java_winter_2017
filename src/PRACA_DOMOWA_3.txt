@@ -1,0 +1,12 @@
+Na bazie struktury figur w pakiecie pl.waw.sgh.figury stwórz
+następujące figury:
+1. Kwadrat
+2. Trójkąt (dowolnego typu)
+3. Trójkąt równoboczny (szczególny rodzaj trójkąta - najlepiej,
+aby dziedziczył z Trójkąta ogólnego).
+Z uwagi na istnienie kilku figur, które nie wymagają dwóch parametrów
+zdefiniuj jednoparametrowy konstruktor w klasie Figura i
+odpowiednio zaimplementuj wszystkie konstruktory we wszystkich klasach.
+
+Na koniec stwórz nową klasę (plik), do przetestowania figur
+(stworzenie figury, wypisanie opisu i policzenie jej pola).

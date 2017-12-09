@@ -1,6 +1,6 @@
 package pl.waw.sgh.figury;
 
-public class Figura {
+public abstract class Figura {
 
     protected double parA;
     protected double parB;
@@ -13,6 +13,8 @@ public class Figura {
         this.parA = parA;
         this.parB = parB;
     }
+
+    public abstract double policzPole();
 
     @Override
     public String toString() {

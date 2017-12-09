@@ -5,6 +5,7 @@ public class Prostokat extends Figura {
         super(parA, parB);
     }
 
+    @Override
     public double policzPole() {
         return parA*parB;
     }
