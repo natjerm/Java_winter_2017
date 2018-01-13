@@ -52,7 +52,7 @@ public class Klient {
     @Override
     public String toString() {
         return "Klient{" +
-                "klientId=" + klientId +
+                "Id=" + klientId +
                 ", imie='" + imie + '\'' +
                 ", nazwisko='" + nazwisko + '\'' +
                 ", email='" + email + '\'' +

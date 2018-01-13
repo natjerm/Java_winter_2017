@@ -1,0 +1,7 @@
+Operując na strukturze bankowej:
+1. w klasie stwórz metody "obciążenie" oraz "uznanie".
+Pamiętaj o obsłudze sytuacji wyjątkowych (brak środków, ujemna wartość sumy do obciążenia).
+Obsługę sytuacji wyjątkowych można napisać poprzez if else, albo opcjonalnie z wykorzystaniem mechanizmu wyjątków.
+
+2. w klasie Bank zaimplementuj metodę "przelew", także pamiętając o sytuacjach wyjątkowych.
+Do implementacji przelewu może się przydać zaimplementowanie wyszukiwania kont po ich numerach.

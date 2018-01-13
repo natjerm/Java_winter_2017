@@ -53,11 +53,11 @@ public abstract class Konto {
 
     @Override
     public String toString() {
-        return "Konto{" +
-                "kontoId=" + kontoId +
-                ", waluta='" + waluta + '\'' +
+        return getClass().getSimpleName() + "{" +
+                "Id=" + kontoId +
+                ", " + waluta +
                 ", stan=" + stan +
-                ", klient=" + klient +
+                ", klient=" + klient.getKlientId() +
                 '}';
     }
 }
