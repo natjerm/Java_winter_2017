@@ -1,6 +1,6 @@
 package pl.waw.sgh.figury;
 
-public abstract class Figura {
+public abstract class Figura implements Comparable<Figura>  {
 
     protected double parA;
     protected double parB;
@@ -21,5 +21,10 @@ public abstract class Figura {
         return super.toString() +
                 " Figura o parametrach A=" + parA +
                 " i B=" + parB;
+    }
+
+    @Override
+    public int compareTo(Figura figura) {
+        return Double.valueOf(policzPole()).compareTo(figura.policzPole());
     }
 }
