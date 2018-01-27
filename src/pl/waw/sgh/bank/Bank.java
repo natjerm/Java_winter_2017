@@ -1,5 +1,8 @@
 package pl.waw.sgh.bank;
 
+import pl.waw.sgh.bank.exceptions.BankException;
+import pl.waw.sgh.bank.exceptions.BrakKontaException;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +32,12 @@ public class Bank {
         return konto;
     }
 
-    public Konto znajdzKonto(Integer kontoId) {
-        //TODO Uzupełnić
-        return null;
+    public Konto znajdzKonto(Integer kontoId) throws BrakKontaException {
+        for (Konto k : listaKont) {
+            if (kontoId.equals(k.getKontoId())) return k;
+        }
+        //return null;
+        throw new BrakKontaException("Konto o nr " + kontoId + " nie istnieje!");
     }
 
     public void przelew(Integer kontoZrodloweId, Integer kontoCelId, BigDecimal kwota) {

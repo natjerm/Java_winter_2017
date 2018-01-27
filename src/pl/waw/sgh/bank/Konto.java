@@ -51,6 +51,8 @@ public abstract class Konto {
         this.klient = klient;
     }
 
+
+
     @Override
     public String toString() {
         return getClass().getSimpleName() + "{" +
